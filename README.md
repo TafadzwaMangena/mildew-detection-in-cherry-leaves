@@ -71,8 +71,55 @@ This structured approach ensures that the model is not only technically sound bu
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 1: Quick Project Summary
+- This project addresses a real-world agricultural problem faced by Farmy & Foods, a cherry plantation company, where the presence of powdery mildew — a fungal infection — threatens crop health and productivity. The current manual inspection process involves human operators visually assessing cherry leaves, spending approximately 30 minutes per tree to classify them as either healthy or infected. This manual approach is time-consuming, not scalable, and introduces the risk of human error.
+
+- To automate this task, a supervised machine learning solution was developed using image classification techniques. The system is trained to predict whether an input image of a cherry leaf falls into one of two categories:
+Class 0: Healthy
+Class 1: Powdery Mildew-Infected
+
+- The dataset used for model training and evaluation was obtained from Kaggle: [Cherry Leaves Dataset — Code Institute](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
+
+### Page 2: Leaves Visualizer
+- This page offers an interactive visual exploration of the cherry leaf dataset, allowing users to better understand the features that distinguish healthy leaves from those affected by powdery mildew.
+- Users can select from three checkboxes to dynamically explore the following visual insights:
+
+#### I. Average and Variability Visualization
+- Displays the computed average image for each class, along with the variability (standard deviation) images. This helps reveal common patterns and inconsistencies across the dataset, offering insights into feature distribution within each class.
+
+#### II. Class Difference Visualization
+- Shows a direct comparison between the average healthy leaf and the average powdery mildew-infected leaf, highlighting the visual features that the machine learning model learns to distinguish during training.
+
+#### III. Image Montage Generator
+- Generates a side-by-side montage of randomly selected healthy and infected leaf images from the dataset. This provides a quick visual summary of the dataset's diversity and gives the user an intuitive understanding of the classification problem.
+
+- This page is designed to support both human intuition and model explainability by offering a hands-on look at the data before and after feature extraction.
+
+### Page 3: Mildew Detector
+- To deliver an automated system capable of predicting whether a cherry leaf is healthy or shows signs of powdery mildew infection based on image input.
+- A link to the original dataset on [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) is provided, allowing users to download sample images of both infected and healthy cherry leaves for testing purposes.
+
+#### User Interaction Flow:
+- A file upload widget allows users to select and upload one or more cherry leaf images for real-time prediction.
+- Once images are submitted, the trained binary classification model processes each image and returns:
+    - A clear prediction label for each image, indicating whether the leaf is infected or healthy.
+    - A probability bar plot for each prediction, visually displaying the model’s confidence in its classification.
+    - A summary results table listing the uploaded filenames alongside their respective prediction outcomes.
+- To support further analysis or reporting, users can export the prediction results using the provided CSV download link located beneath the results table.
+- This page simulates a real-world deployment scenario where farm staff could use the model on new leaf samples to receive instant predictions and take informed action.
+
+### Page 4: Project Hypothesis and Validation
+- The working hypothesis behind this project is that cherry leaves affected by powdery mildew display distinct visual symptoms, most notably the presence of white, powdery patches on the leaf surface, which can reliably distinguish them from healthy leaves.
+- To investigate this assumption, a series of visual analyses were performed:
+
+    - The Average Image Comparison highlights that healthy leaves tend to show a clean, uniform surface, whereas the average appearance of infected leaves clearly displays white blotches — a visual cue associated with mildew.
+    - The Variability Image Analysis indicates that infected leaves exhibit noticeable variations, especially marked by bright streaks and irregular patterns across the center area — patterns that are largely absent in the healthy leaf class.
+    - The Image Montage offers a side-by-side look at randomly selected healthy and infected samples, providing visual confirmation that powdery mildew typically appears as white patches on the infected leaf surfaces.
+      
+### Page 5: ML Performance Metrics
+- Label Frequencies for Train, Validation and Test Sets
+- Model History - Accuracy and Losses
+- Model evaluation result
 
 ## Unfixed Bugs
 
