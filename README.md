@@ -27,9 +27,40 @@ A machine learning model can be trained to classify cherry leaves as either heal
 
  ### Validation:
 This hypothesis will be tested by training a model using labeled image data and evaluating its performance on a separate, unseen validation set. If the model reaches or exceeds the target accuracy, the hypothesis will be considered valid, demonstrating its potential for real-world deployment on cherry farms.
+
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+ ### Business Requirement 1
+
+ - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one affected by powdery mildew.
+
+ #### Rationale for Data Visualisation Tasks
+ 
+ ##### Average Image Calculation:
+   - Generate an average image for each class (healthy and powdery mildew) to highlight the typical appearance and structure of leaves in both categories.
+
+ ##### Image Variability Analysis:
+   - Create variability (standard deviation) images for each class to visualize the range of differences within the same category, helping to identify consistent features and outliers.
+
+ ##### Difference Image Comparison:
+   - Compute and display a difference image between the average healthy leaf and the average powdery mildew-infected leaf. This will provide a direct visual representation of class distinctions.
+
+ ##### Image Montage Creation:
+   - Display montages of sample images for both healthy and mildew-infected leaves to give a quick visual overview and support human intuition about the dataset.
+ 
+ These visual tools will allow both technical and non-technical stakeholders to better understand the feasibility of automating the detection process and highlight the visual basis for model training.
+
+ ### Business Requirement 2
+   - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew using an ML system.
+
+ #### Rationale for Machine Learning Tasks
+   - This requirement will be addressed by developing a classification model capable of processing leaf images and predicting their health status. The tasks to meet this requirement include:
+
+ ##### Data Preprocessing:
+   - Images will be resized and normalized to ensure consistent input dimensions for model training, while balancing between image quality and model size. Given the original 256x256 resolution, alternative shapes such as 100x100 or 50x50 may be used to reduce the final model size to under 100MB for easier deployment and GitHub version control.
+
+
+This structured approach ensures that the model is not only technically sound but also practically useful in reducing manual inspection time and supporting large-scale deployment.
 
 ## ML Business Case
 
