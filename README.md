@@ -127,6 +127,8 @@ Class 1: Powdery Mildew-Infected
 
 ## Deployment
 
+- Will deploy on Render not Heroku.
+
 ### Heroku
 
 - The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
