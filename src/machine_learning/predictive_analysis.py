@@ -11,6 +11,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     """
     Plot prediction probability results
     """
+    pred_proba = float(pred_proba)
 
     prob_per_class = pd.DataFrame(
         data=[0, 0],
@@ -51,11 +52,13 @@ def load_model_and_predict(my_image, version):
 
     model = load_model(f"outputs/{version}/mildew_detector_model.h5")
 
-    pred_proba = model.predict(my_image)[0, 0]
+    pred_proba = model.predict(my_image)[0, 0].astype(float)
 
     target_map = {v: k for k, v in {'Uninfected': 0, 'Infected': 1}.items()}
-    pred_class = target_map[pred_proba > 0.5]
-    if pred_class == target_map[0]:
+
+    pred_class = target_map[int(pred_proba > 0.5)]
+
+    if pred_class == 'Uninfected':
         pred_proba = 1 - pred_proba
 
     st.write(
