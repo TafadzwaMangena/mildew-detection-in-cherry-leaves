@@ -1,5 +1,11 @@
 # Mildew Detection in Cherry Leaves
 
+- This project focuses on developing an automated system for detecting powdery mildew in plants using machine learning techniques. The solution leverages deep learning models to classify images of plant leaves as either "Infected" or "Uninfected" with powdery mildew. The project uses a convolutional neural network (CNN) trained on labeled leaf images to detect and predict the presence of mildew with high accuracy.
+
+- By integrating this model into a user-friendly web application, powered by Streamlit, users can upload plant images and receive instant predictions about whether their plant is infected with powdery mildew. The app provides real-time feedback with visualizations of prediction probabilities, helping users take timely action to prevent further spread of the disease.
+
+- The live application can be found [here](https://mildew-detection-in-cherry-leaves-vsfn.onrender.com)
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
