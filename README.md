@@ -133,20 +133,58 @@ Class 1: Powdery Mildew-Infected
 
 ## Deployment
 
-- Will deploy on Render not Heroku.
+- The app was deployed on render. 
 
-### Heroku
+### Render.com
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+- The App live link is: `https://mildew-detection-in-cherry-leaves-vsfn.onrender.com`
+- The project was deployed to Render using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+Follow these steps to deploy the Powdery Mildew Detection project on Render.com:
+
+1. **Sign up or Log in to Render**:
+   - Visit [Render.com](https://render.com) and sign up for an account or log in if you already have one.
+
+2. **Create a New Web Service**:
+   - Once logged in, click on the **New** button on the dashboard and select **Web Service**.
+
+3. **Connect Your GitHub Repository**:
+   - Link your GitHub account to Render if you haven’t already.
+   - Select the **powdery-mildew-detection** repository from your GitHub repositories.
+
+4. **Choose Deployment Settings**:
+   - **Environment**: Choose **Python**.
+   - **Branch**: Select the branch you want to deploy (e.g., `main`).
+   - **Build Command**: Enter the following build command to install the required dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   - **Start Command**: Enter the command to run your app:
+     ```bash
+     streamlit run app.py
+     ```
+
+5. **Set Environment Variables** (Optional):
+   - If your project requires environment variables (e.g., API keys, database credentials), go to the **Environment** tab and add them.
+
+6. **Deploy the Web Service**:
+   - Click on the **Create Web Service** button to start the deployment process. Render will automatically detect the necessary files (like `requirements.txt`) and build the environment.
+
+7. **Monitor Build Logs**:
+   - You will be directed to the deployment logs page. Here, you can monitor the progress as Render installs dependencies and sets up the app. Once the build is successful, Render will start your app.
+
+8. **Access Your Live Application**:
+   - After deployment, Render will provide you with a public URL for your application. You can access it by clicking on the provided link.
+
+9. **Troubleshooting** (if needed):
+   - If your app fails to deploy, review the logs to identify issues such as missing dependencies, errors in your code, or misconfigured environment variables.
+   - Fix the issue, commit changes to your GitHub repository, and Render will automatically redeploy the app.
+
+10. **Automatic Deployments on Updates**:
+    - Whenever you push changes to your GitHub repository, Render will automatically redeploy the app with the latest changes.
+
+Once deployed, you can share the link to your app and monitor its performance through the Render dashboard.
 
 ## Main Data Analysis and Machine Learning Libraries
 
