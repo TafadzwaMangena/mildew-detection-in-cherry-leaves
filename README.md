@@ -188,7 +188,26 @@ Once deployed, you can share the link to your app and monitor its performance th
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+The main libraries used are:
+
+- numpy==1.26.1            :to work with data in arrays
+- pandas==2.1.1            :for data manipulation and analysis
+- matplotlib==3.8.0        :for data visualisation
+- seaborn==0.13.2          :for data visualisation
+- plotly==5.17.0           :for graphs and plots
+- Pillow==10.0.1           :for adjusting images
+- streamlit==1.40.2        :for the app interface deployed on Render
+- joblib==1.4.2            :for runnning tasks in parallel
+- scikit-learn==1.3.1      :for predictive analysis
+- tensorflow-cpu==2.16.1   :for model training
+- keras>=3.0.0             :for model hyperparameters
+
+### Other Technologies used
+- Streamlit: used for dashboard development to present data and for final project delivery
+- Render: used to deploy the project as a web app.
+- Git/GitHub: used for version control and code storage
+- Am I responsive - used to produce screenshot of the project.
+
 
 ## Credits
 
