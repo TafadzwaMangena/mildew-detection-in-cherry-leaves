@@ -12,9 +12,10 @@ from src.machine_learning.predictive_analysis import (
 
 
 def page_mildew_detector_body():
-
+    """
+    Produce results of analysis on uploaded image
+    """
     st.write("## Mildew Detector")
-
     st.write(
         "You can download the images from "
         "[here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."

@@ -6,6 +6,9 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def page_ml_performance_metrics():
+    """
+    Display Performance Metrics page text and images
+    """
     st.write("## ML Performance Metrics")
 
     version = 'v1'
@@ -14,8 +17,10 @@ def page_ml_performance_metrics():
 
     labels_distribution = plt.imread(
         f"outputs/{version}/labels_distribution.png")
-    st.image(labels_distribution,
-             caption='Labels Distribution on Train, Validation and Test Sets')
+    st.image(
+        labels_distribution,
+        caption='Labels Distribution on Train, Validation and Test Sets'
+        )
     st.write("---")
 
     st.write("### Model History")
@@ -29,5 +34,9 @@ def page_ml_performance_metrics():
     st.write("---")
 
     st.write("### Generalised Performance on Test Set")
-    st.dataframe(pd.DataFrame(load_test_evaluation(version),
-                              index=['Loss', 'Accuracy']))
+    st.dataframe(
+        pd.DataFrame(
+            load_test_evaluation(version),
+            index=['Loss', 'Accuracy']
+            )
+            )

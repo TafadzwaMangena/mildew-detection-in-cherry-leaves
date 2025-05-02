@@ -10,9 +10,11 @@ import random
 
 
 def page_leaves_visualizer_body():
-
+    """
+    Display average and variability images
+    for healthy and infected leaves
+    """
     st.write("## Leaves Visualizer")
-
     st.info(
         f"The client is interested is visually differentiating a leaf "
         f"infected with powdery mildew from a healthy leaf."
@@ -46,8 +48,10 @@ def page_leaves_visualizer_body():
         st.info(
             f"* We can observe a subtle visual difference between the "
             f"average leaves, though this distinction is not apparent")
-        st.image(diff_between_avgs,
-                 caption='Difference between average images')
+        st.image(
+            diff_between_avgs,
+            caption='Difference between average images'
+            )
 
     if st.checkbox("Image Montage"):
         st.write("* To refresh the montage, click the 'Create Montage' button")
@@ -56,14 +60,19 @@ def page_leaves_visualizer_body():
         label_to_display = st.selectbox(label="Select label",
                                         options=labels, index=0)
         if st.button("Create Montage"):
-            image_montage(dir_path=my_data_dir + '/validation',
-                          label_to_display=label_to_display,
-                          nrows=5, ncols=3, figsize=(10, 15))
+            image_montage(
+                dir_path=my_data_dir + '/validation',
+                label_to_display=label_to_display,
+                nrows=5, ncols=3, figsize=(10, 15)
+                )
 
         st.write("---")
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
+    """
+    Display image montage of requested image type
+    """
     sns.set_style("white")
     labels = os.listdir(dir_path)
 
