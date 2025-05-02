@@ -7,7 +7,10 @@ import joblib
 
 
 def download_dataframe_as_csv(df):
-
+    """
+    Convert DataFrame to .csv format
+    and allow user to download
+    """
     now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
     csv = df.to_csv().encode()
     b64 = base64.b64encode(csv).decode()
@@ -19,4 +22,7 @@ def download_dataframe_as_csv(df):
 
 
 def load_pkl_file(file_path):
+    """
+    Load pkl file
+    """
     return joblib.load(filename=file_path)
