@@ -233,20 +233,19 @@ The main libraries used are:
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The general information on Mildew was taken from [Wikipedia](https://en.wikipedia.org/wiki/Mildew)
+- [Code Institute's](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) Repo template for Milestone Project: Mildew Detection in Cherry Leaves was used.
+- [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) played a significant role in shaping the development of this project, serving as a valuable reference throughout. Elements from the walkthrough were used to guide the structure and implementation of the Jupyter notebooks and app pages.
+- [Stack Overflow](https://stackoverflow.com/questions) was heavily used in model training and fixing encountered bugs during development.
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- The dataset was for the project was taken from [kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
 
-## Acknowledgements (optional)
+## Acknowledgements
 
-- Thank the people who provided support throughout this project.
+- I would like to give a special acknowledge to my beautiful wife for her continued support from my first project to this final project.
+- I would like to appreciate Mo Shami, my mentor for his valued guidance and suggestions.
+- A shout out to Niel_ci from Code Institute for his assistance with codespaces issues.
