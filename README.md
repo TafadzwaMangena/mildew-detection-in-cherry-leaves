@@ -1,5 +1,7 @@
 # Mildew Detection in Cherry Leaves
 
+![Web responsiveness display](static/images/markdown/responsiveness_display.png)
+
 - This project focuses on developing an automated system for detecting powdery mildew in plants using machine learning techniques. The solution leverages deep learning models to classify images of plant leaves as either "Infected" or "Uninfected" with powdery mildew. The project uses a convolutional neural network (CNN) trained on labeled leaf images to detect and predict the presence of mildew with high accuracy.
 
 - By integrating this model into a user-friendly web application, powered by Streamlit, users can upload plant images and receive instant predictions about whether their plant is infected with powdery mildew. The app provides real-time feedback with visualizations of prediction probabilities, helping users take timely action to prevent further spread of the disease.
@@ -22,21 +24,21 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
- ### Hypothesis 1:
+### Hypothesis 1:
 Healthy cherry leaves and those affected by powdery mildew show distinct visual differences that can be identified through image analysis.
 
- ### Validation:
+### Validation:
 To confirm this, a visual inspection study will be performed by examining a representative sample of images from both categories. The goal is to assess whether the differences are consistently noticeable to the human eye, which would justify the use of image-based machine learning for automated detection.
 
- ### Hypothesis 2:
+### Hypothesis 2:
 A machine learning model can be trained to classify cherry leaves as either healthy or infected with powdery mildew, achieving an accuracy rate of at least 97%.
 
- ### Validation:
+### Validation:
 This hypothesis will be tested by training a model using labeled image data and evaluating its performance on a separate, unseen validation set. If the model reaches or exceeds the target accuracy, the hypothesis will be considered valid, demonstrating its potential for real-world deployment on cherry farms.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
- ### Business Requirement 1
+### Business Requirement 1
 
  - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one affected by powdery mildew.
 
@@ -86,6 +88,8 @@ Class 1: Powdery Mildew-Infected
 
 - The dataset used for model training and evaluation was obtained from Kaggle: [Cherry Leaves Dataset — Code Institute](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
 
+![Page 1: Quick Project Summary](static/images/markdown/page_01.png)
+
 ### Page 2: Leaves Visualizer
 - This page offers an interactive visual exploration of the cherry leaf dataset, allowing users to better understand the features that distinguish healthy leaves from those affected by powdery mildew.
 - Users can select from three checkboxes to dynamically explore the following visual insights:
@@ -101,6 +105,8 @@ Class 1: Powdery Mildew-Infected
 
 - This page is designed to support both human intuition and model explainability by offering a hands-on look at the data before and after feature extraction.
 
+![Page 2: Leaves Visualizer](static/images/markdown/page_02.png)
+
 ### Page 3: Mildew Detector
 - To deliver an automated system capable of predicting whether a cherry leaf is healthy or shows signs of powdery mildew infection based on image input.
 - A link to the original dataset on [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) is provided, allowing users to download sample images of both infected and healthy cherry leaves for testing purposes.
@@ -114,6 +120,8 @@ Class 1: Powdery Mildew-Infected
 - To support further analysis or reporting, users can export the prediction results using the provided CSV download link located beneath the results table.
 - This page simulates a real-world deployment scenario where farm staff could use the model on new leaf samples to receive instant predictions and take informed action.
 
+![Page 3: Mildew Detector](static/images/markdown/page_03.png)
+
 ### Page 4: Project Hypothesis and Validation
 - The working hypothesis behind this project is that cherry leaves affected by powdery mildew display distinct visual symptoms, most notably the presence of white, powdery patches on the leaf surface, which can reliably distinguish them from healthy leaves.
 - To investigate this assumption, a series of visual analyses were performed:
@@ -121,11 +129,15 @@ Class 1: Powdery Mildew-Infected
     - The Average Image Comparison highlights that healthy leaves tend to show a clean, uniform surface, whereas the average appearance of infected leaves clearly displays white blotches — a visual cue associated with mildew.
     - The Variability Image Analysis indicates that infected leaves exhibit noticeable variations, especially marked by bright streaks and irregular patterns across the center area — patterns that are largely absent in the healthy leaf class.
     - The Image Montage offers a side-by-side look at randomly selected healthy and infected samples, providing visual confirmation that powdery mildew typically appears as white patches on the infected leaf surfaces.
+
+![Page 4: Project Hypothesis and Validation](static/images/markdown/page_04.png)
       
 ### Page 5: ML Performance Metrics
 - Label Frequencies for Train, Validation and Test Sets
 - Model History - Accuracy and Losses
 - Model evaluation result
+
+![Page 5: ML Performance Metrics](static/images/markdown/page_05.png)
 
 ## Unfixed Bugs
 
