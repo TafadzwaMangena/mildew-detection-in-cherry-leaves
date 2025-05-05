@@ -258,6 +258,6 @@ The main libraries used are:
 
 ## Acknowledgements
 
-- I would like to give a special acknowledge to my beautiful wife for her continued support from my first project to this final project.
+- I would like to give a special acknowledgement to my beautiful wife for her continued support from my first project to this final project.
 - I would like to appreciate Mo Shami, my mentor for his valued guidance and suggestions.
 - A shout out to Niel_ci from Code Institute for his assistance with codespaces issues.
