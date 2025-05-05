@@ -14,11 +14,11 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     pred_proba = float(pred_proba)
 
     prob_per_class = pd.DataFrame(
-        data=[0, 0],
+        data=[0.0, 0.0],
         index={'Uninfected': 0, 'Infected': 1}.keys(),
         columns=['Probability']
     )
-    prob_per_class.loc[pred_class] = pred_proba
+    prob_per_class.loc[pred_class] = float(pred_proba)
     for x in prob_per_class.index.to_list():
         if x not in pred_class:
             prob_per_class.loc[x] = 1 - pred_proba
