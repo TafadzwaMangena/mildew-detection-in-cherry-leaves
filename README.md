@@ -8,6 +8,21 @@
 
 - The live application can be found [here](https://mildew-detection-in-cherry-leaves-vsfn.onrender.com)
 
+## Table of Contents
+1. [Introduction](#mildew-detection-in-cherry-leaves)
+2. [Dataset Content](#dataset-content)
+3. [Business Requirements](#business-requirements)
+4. [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
+5. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+6. [ML business case](#ml-business-case)
+7. [Dashboard Design](#dashboard-design)
+8. [Unfixed Bugs](#unfixed-bugs)
+9. [Deployment](#deployment)
+10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+11. [Testing](#testing)
+12. [Credits](#credits)
+13. [Acknowledgements](#acknowledgements)
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -22,7 +37,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate?
+## Hypothesis and how to validate
 
 ### Hypothesis 1:
 Healthy cherry leaves and those affected by powdery mildew show distinct visual differences that can be identified through image analysis.
