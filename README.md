@@ -15,13 +15,14 @@
 4. [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
 5. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 6. [ML business case](#ml-business-case)
-7. [Dashboard Design](#dashboard-design)
-8. [Unfixed Bugs](#unfixed-bugs)
-9. [Deployment](#deployment)
-10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
-11. [Testing](#testing)
-12. [Credits](#credits)
-13. [Acknowledgements](#acknowledgements)
+7. [User Stories](user-stories)
+8. [Dashboard Design](#dashboard-design)
+9. [Unfixed Bugs](#unfixed-bugs)
+10. [Deployment](#deployment)
+11. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+12. [Testing](#testing)
+13. [Credits](#credits)
+14. [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
 
@@ -95,6 +96,32 @@ This structured approach ensures that the model is not only technically sound bu
 - The business goal required the model to meet a minimum prediction accuracy of 97% to ensure that it could reliably support decision-making in the field. This target was achieved through model tuning, validation, and evaluation on unseen image data.
 - A Convolutional Neural Network (CNN) was selected for this project, as it is well-suited for extracting spatial and visual patterns from image data. The model was designed as a two-class, single-label classifier. An adaptive learning optimizer, such as Adagrad, was used to efficiently adjust learning rates during training, helping to improve convergence and stability.
 - The deployment of this model allows the stakeholder to significantly reduce the time and labor involved in manually inspecting each cherry tree for signs of mildew. With real-time predictions, employees can focus their efforts on applying treatment only where it is needed, helping to prevent further spread of the fungus and minimize potential revenue loss caused by delayed detection.
+
+## User Stories
+
+ 1. USER STORY: Business Information
+    - As a developer, I can consult the Business Understanding section of the README to gain clarity on the project's goals and requirements, ensuring they guide the development process. (Business Requirement 1)
+
+ 2. USER STORY: Data Collection
+    - As a developer, I can access the dataset so that I can begin exploring the data. (Business Requirement 1)
+   
+ 3. USER STORY - Data Exploration & Visualization
+    - As a developer, I can clean, explore, and visualize the dataset so that I can prepare it for model development and respond to the project's first business requirement. (Business Requirement 1)
+   
+ 4. User Story: Model Training & Evaluation
+    - As a developer, I can train and evaluate the CNN model using the augmented training dataset so that I can ensure it performs accurately on unseen images and aligns with business requirements. (Business Requirement 2)
+   
+ 5. User Story: Dashboard Design
+    - As the client, I can open the app and navigate a multi-page Streamlit dashboard so that I can access a clear, organized summary of the project, including findings, data tools, hypotheses, and technical performance. (Business Requirement 1)
+   
+ 6. User Story: Project Deployment
+    - As a developer, I can deploy the project to Render so that it is publicly accessible for the client to review and interact with. (Business Requirement 2)
+   
+ 7. User Story: Project Documentation
+    - As an app user, I can access the README file so that I can understand the purpose of the project, how it was developed, and how to use it. (Business Requirement 2)
+   
+ 8. User Story: Streamlit UI Testing
+    - As a developer, I can test the Streamlit user interface so that I can confirm it works as intended before submitting the project. (Business Requirement 2)
 
 [Back to top](#table-of-contents)
 
