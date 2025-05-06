@@ -51,6 +51,8 @@ A machine learning model can be trained to classify cherry leaves as either heal
 ### Validation:
 This hypothesis will be tested by training a model using labeled image data and evaluating its performance on a separate, unseen validation set. If the model reaches or exceeds the target accuracy, the hypothesis will be considered valid, demonstrating its potential for real-world deployment on cherry farms.
 
+[Back to top](#table-of-contents)
+
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 ### Business Requirement 1
@@ -85,12 +87,16 @@ This hypothesis will be tested by training a model using labeled image data and 
 
 This structured approach ensures that the model is not only technically sound but also practically useful in reducing manual inspection time and supporting large-scale deployment.
 
+[Back to top](#table-of-contents)
+
 ## ML Business Case
 
 - Given the need to automate the identification of powdery mildew on cherry leaves, this project applies a supervised machine learning approach specifically designed for binary image classification. The task is to categorize images of cherry leaves into one of two classes: healthy or infected.
 - The business goal required the model to meet a minimum prediction accuracy of 97% to ensure that it could reliably support decision-making in the field. This target was achieved through model tuning, validation, and evaluation on unseen image data.
 - A Convolutional Neural Network (CNN) was selected for this project, as it is well-suited for extracting spatial and visual patterns from image data. The model was designed as a two-class, single-label classifier. An adaptive learning optimizer, such as Adagrad, was used to efficiently adjust learning rates during training, helping to improve convergence and stability.
 - The deployment of this model allows the stakeholder to significantly reduce the time and labor involved in manually inspecting each cherry tree for signs of mildew. With real-time predictions, employees can focus their efforts on applying treatment only where it is needed, helping to prevent further spread of the fungus and minimize potential revenue loss caused by delayed detection.
+
+[Back to top](#table-of-contents)
 
 ## Dashboard Design
 
@@ -154,9 +160,13 @@ Class 1: Powdery Mildew-Infected
 
 ![Page 5: ML Performance Metrics](static/images/markdown/page_05.png)
 
+[Back to top](#table-of-contents)
+
 ## Unfixed Bugs
 
 - The are no unfixed bugs present.
+
+[Back to top](#table-of-contents)
 
 ## Deployment
 
@@ -213,6 +223,8 @@ Follow these steps to deploy the Powdery Mildew Detection project on Render.com:
 
 Once deployed, you can share the link to your app and monitor its performance through the Render dashboard.
 
+[Back to top](#table-of-contents)
+
 ## Main Data Analysis and Machine Learning Libraries
 
 The main libraries used are:
@@ -234,6 +246,8 @@ The main libraries used are:
 - Render: used to deploy the project as a web app.
 - Git/GitHub: used for version control and code storage
 - Am I responsive - used to produce screenshot of the project.
+
+[Back to top](#table-of-contents)
 
 ## Testing
 
@@ -257,6 +271,7 @@ The main libraries used are:
 |                                                                                |                                                                                                                                                           | Image analysis report                                           | Click button to download CSV report of analysis | Report is downloaded containing the results shown on dashboard                | Pass        |
 
 
+[Back to top](#table-of-contents)
 
 ## Credits
 
@@ -276,3 +291,5 @@ The main libraries used are:
 - I would like to give a special acknowledgement to my beautiful wife for her continued support from my first project to this final project.
 - I would like to appreciate Mo Shami, my mentor for his valued guidance and suggestions.
 - A shout out to Niel_ci from Code Institute for his assistance with codespaces issues.
+
+[Back to top](#table-of-contents)
